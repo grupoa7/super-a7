@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Super A7 · como funciona</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet"><style>:root{--ve:#121417;--vm:#2a2f36;--vf:#f2f2ef;--bege:#e4e2dc;--creme:#f1ead3;--dour:#c9a227;
+--cz:#4a4d52;--czc:#8a8d93;--qp:#121417;--ok:#16a34a;--okbg:#dcfce7;--at:#d97706;--atbg:#fef3c7;--risco:#dc2626;--riscobg:#fee2e2}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Nunito Sans',-apple-system,'Segoe UI',sans-serif;background:var(--vf);color:var(--qp);line-height:1.5;padding-bottom:40px}
+.num{font-family:'JetBrains Mono',monospace;font-feature-settings:'tnum'}
+.header{background:var(--ve);color:#fff;padding:16px 20px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.header h1{font-size:1.15rem;font-weight:900;letter-spacing:1.5px}.header .accent{color:var(--dour)}
+.header .sub{font-size:.8rem;opacity:.9;margin-top:2px;font-weight:600}
+.chip{font-size:.7rem;background:rgba(255,255,255,.15);padding:3px 10px;border-radius:4px;font-weight:700;letter-spacing:.5px;display:inline-block;margin-top:6px}
+.container{max-width:640px;margin:0 auto}
+.section{background:#fff;padding:20px;margin:14px;border-radius:16px;border:1px solid var(--bege)}
+.stitle{font-size:1.1rem;font-weight:800;margin-bottom:6px;color:var(--ve);display:flex;align-items:center;gap:8px}
+.ssub{font-size:.8rem;color:var(--cz);font-weight:600;margin-bottom:14px}
+.dest{border-radius:16px;margin:14px;padding:18px;border:2px solid var(--czc);background:#fff;position:relative}
+.dest-g{border-color:var(--ok);background:var(--okbg)}.dest-y{border-color:var(--at);background:var(--atbg)}
+.dest-r{border-color:var(--risco);background:var(--riscobg)}.dest-n{border-color:var(--bege);background:#fff}
+.dest .tag{position:absolute;top:14px;right:14px;font-size:.72rem;font-weight:800;padding:5px 11px;border-radius:8px;background:#fff;letter-spacing:.4px;font-family:'JetBrains Mono',monospace}
+.dest-g .tag{color:var(--ok);border:2px solid var(--ok)}.dest-y .tag{color:var(--at);border:2px solid var(--at)}
+.dest-r .tag{color:var(--risco);border:2px solid var(--risco)}.dest-n .tag{color:var(--cz);border:2px solid var(--czc)}
+.dest .dt{font-size:1rem;font-weight:800;padding-right:110px}
+.dest .dv{font-size:1.7rem;font-weight:900;font-family:'JetBrains Mono',monospace;margin:6px 0 2px}
+.dest .dm{font-size:.82rem;color:var(--cz);font-weight:700}
+.dbw{height:8px;background:var(--bege);border-radius:4px;overflow:hidden}
+.db{height:100%;border-radius:4px}
+.db-g{background:linear-gradient(90deg,#15803d,#22c55e)}.db-y{background:linear-gradient(90deg,#b45309,#f59e0b)}
+.db-r{background:linear-gradient(90deg,#991b1b,#dc2626)}.db-n{background:var(--czc)}
+.crit{padding:14px;border-radius:12px;border:2px solid var(--czc);background:#fff;margin:0 14px 10px;position:relative}
+.crit-g{border-color:var(--ok);background:var(--okbg)}.crit-y{border-color:var(--at);background:var(--atbg)}.crit-r{border-color:var(--risco);background:var(--riscobg)}.crit-n{border-color:var(--bege)}
+.crit .st{position:absolute;top:10px;right:12px;font-size:.66rem;font-weight:800;padding:4px 9px;border-radius:8px;background:#fff;color:var(--cz);letter-spacing:.4px;border:1px solid var(--bege)}
+.crit .cic{font-size:1.25rem;margin-right:6px}
+.crit .cn{font-size:.98rem;font-weight:800;padding-right:98px}
+.crit .cp{font-size:.7rem;font-weight:700;color:var(--czc);font-family:'JetBrains Mono',monospace;margin:2px 0 6px;text-transform:uppercase}
+.crit .cm{font-size:.85rem;color:var(--cz);line-height:1.5;font-weight:600}
+.hero2{background:linear-gradient(135deg,var(--ve),var(--vm));color:#fff;border-radius:16px;padding:20px;text-align:center;margin:14px}
+.hero2 .nome{font-size:1rem;font-weight:800}
+.hero2 .r{font-size:2.3rem;font-weight:900;color:var(--dour);font-family:'JetBrains Mono',monospace;margin:6px 0 2px}
+.hero2 .s{font-size:.83rem;opacity:.92;line-height:1.55;font-weight:600}
+.faixas{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:0 14px 14px}
+.faixa{background:#fff;border:1px solid var(--bege);border-radius:12px;padding:11px;text-align:center}
+.faixa .p{font-size:.68rem;color:var(--cz);font-weight:800;letter-spacing:.4px}
+.faixa .rr{font-size:.98rem;font-weight:900;margin-top:3px;font-family:'JetBrains Mono',monospace}
+.faixa.alvo{border:2px solid var(--ok);background:var(--okbg)}
+.guia{display:block;margin:12px 0 0;background:var(--dour);color:#fff;text-align:center;font-weight:900;font-size:.92rem;padding:13px;border-radius:12px;text-decoration:none}
+.whats{margin:14px;background:#fff;border:2px solid var(--bege);border-radius:16px;padding:16px;text-align:center}
+.whats .wt{font-size:.95rem;font-weight:800;color:var(--ve)}
+.whats .ws{font-size:.82rem;color:var(--cz);font-weight:600;margin:6px 0 0;line-height:1.5}
+.aviso{background:var(--dour);color:var(--qp);font-weight:800;font-size:.78rem;text-align:center;padding:8px;letter-spacing:.3px}
+.treino{background:#eff6ff;border:2px dashed #1d4ed8;border-radius:16px;padding:16px;margin:14px}
+.treino .tn{font-size:1rem;font-weight:900;color:#1d4ed8;margin-bottom:6px}
+.treino .tm{font-size:.84rem;line-height:1.55;font-weight:600;margin-bottom:10px}
+footer{text-align:center;font-size:.72rem;color:var(--czc);margin-top:20px;font-weight:600;padding:0 14px}
+footer .disc{display:block;font-weight:500;font-size:.68rem;opacity:.8;margin-bottom:7px;line-height:1.4}
+.ritmo{margin-top:7px;font-size:.8rem;font-weight:800;color:var(--ve);background:rgba(255,255,255,.75);border:1px dashed var(--dour);border-radius:8px;padding:6px 9px;font-family:'JetBrains Mono',monospace}
+.rgl{display:flex;align-items:center;gap:9px;margin:7px 0}
+.rgl .n{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.05rem;background:rgba(0,0,0,.07);color:var(--ve);border-radius:8px;min-width:34px;height:34px;padding:0 8px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;white-space:nowrap}
+.rgl .t{line-height:1.28;font-size:.9rem}
+.tol{font-size:.76rem;background:rgba(0,0,0,.05);border-radius:7px;padding:5px 8px;margin:6px 0 2px;opacity:.9}
+.txt{background:#fff;border:1px solid var(--bege);border-radius:14px;padding:16px 18px;margin:14px;font-size:.92rem;line-height:1.6}.txt h2{font-size:1.05rem;color:var(--ve);margin:0 0 8px}.txt ul{margin-left:18px}.txt li{margin-bottom:5px}.txt table{width:100%;border-collapse:collapse;font-size:.86rem;margin-top:6px}.txt th{background:var(--ve);color:#fff;text-align:left;padding:6px 8px;font-size:.7rem;text-transform:uppercase}.txt td{padding:7px 8px;border-top:1px solid var(--bege)}</style></head><body>
+<div class="header"><h1>SUPER <span class="accent">A7</span></h1><div class="sub">Como funciona o programa · time central do Grupo A7</div><span class="chip">4º TRI 2026 · OUT NOV DEZ · RADAR TODA TERÇA</span></div><div class="container">
+<div class="txt"><h2>O que é</h2>O Super A7 é o programa trimestral de <b>remuneração variável por níveis de serviço</b> do time central da holding (Financeiro, RH/DP, Controladoria e Marketing). Cada Membro tem uma ficha com 7 níveis de serviço, cada um com uma fonte de dado. Toda terça o <b>Radar</b> lê as fontes e pinta cada nível de verde, amarelo, vermelho ou cinza na sua página individual. Ninguém descobre a nota no fim do trimestre.</div>
+<div class="txt"><h2>Os 199 pontos</h2><table><tr><th>Grupo</th><th>Peso</th><th>O que mede</th></tr><tr><td>3 habilitadores</td><td>33 cada (99)</td><td>Uso do Asana · retorno em 24h úteis (PJ) ou presença e horário (CLT) · rotinas principais da função no prazo</td></tr><tr><td>3 qualificadores</td><td>20 cada (60)</td><td>Entregas específicas da função</td></tr><tr><td>1 Super Meta</td><td>40</td><td>Entrega única de alto impacto no trimestre</td></tr></table><p style="margin-top:8px"><b>Regra de ouro:</b> critério por prazo ou número é binário: entregou no prazo, pontuou; não entregou, zero. Nota parcial só onde a régua escreve uma tolerância. Zerar um habilitador deixa o teto em 166 pontos: proteja seus 99 de base.</p></div>
+<div class="txt"><h2>Faixas</h2><table><tr><th>Pontuação final</th><th>Status</th><th>% da variável</th></tr><tr><td>0 a 99</td><td>Não habilitado</td><td>0%</td></tr><tr><td>100 a 159</td><td>Abaixo do esperado</td><td>0%</td></tr><tr><td>160 a 165</td><td>Acima do esperado</td><td>70%</td></tr><tr><td>166 a 175</td><td>Muito acima do esperado</td><td>90%</td></tr><tr><td>Acima de 175</td><td>Desempenho excepcional</td><td>100% + Estrela</td></tr></table><p style="margin-top:8px">Variável = <b>20%</b> da remuneração base acumulada do trimestre × a faixa atingida. O valor em R$ de cada Membro aparece só na própria página, no link exclusivo.</p></div>
+<div class="txt"><h2>Como o Radar lê</h2><ul><li><b>Asana é a fonte da verdade</b> quando não há sistema final: rotina ou missão concluída até o prazo conta; passada do prazo sem comentário, não conta.</li><li>Com sistema final (Pipefy, Omie, relatório de jornada), vale o sistema.</li><li>Sem sistema e sem rotina (retorno em 24h, ausência): vale a exceção registrada pela Diretoria na semana. Sem exceção, verde.</li><li>Rotina que ainda não existe no Asana aparece <b>cinza</b>: conta peso cheio na projeção e entra como pendência a resolver.</li></ul></div>
+<div class="txt"><h2>O ciclo da semana</h2><table><tr><th>Quando</th><th>O quê</th></tr><tr><td>segunda 18h</td><td>Corte. Autoavaliação quinzenal registrada no Asana nas datas marcadas (27/10 · 10/11 · 24/11 · 08/12 · 22/12)</td></tr><tr><td>segunda 22h</td><td>Radar lê as fontes e apura</td></tr><tr><td>até terça 13h</td><td>Diretoria confirma a apuração</td></tr><tr><td>terça 15h · terça 16h</td><td>Reuniões semanais de status dos serviços (Financeiro e RH)</td></tr><tr><td>terça 17h</td><td>Páginas individuais atualizadas</td></tr><tr><td>quarta 9h</td><td>Mensagem individual com o resumo</td></tr></table><p style="margin-top:8px">Primeiro Radar valendo: <b>27/10/2026</b>. Fechamento do trimestre até 05/01; pagamento da variável dia 20.</p></div>
+<div class="txt"><h2>Revisão</h2>Toda apuração tem fonte e pode ser conferida. Quer revisar uma leitura? Fale com o Hugo em até <b>48h</b> após o Radar, trazendo a evidência (link da tarefa, print do sistema).</div>
+<footer><span class="disc">Programa Super A7: remuneração variável por níveis de serviço, conforme o regulamento do programa. A apuração é feita pelo Radar com base nos sistemas e confirmada pela Diretoria.</span>Super A7 · Grupo A7</footer></div></body></html>
